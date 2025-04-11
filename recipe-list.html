@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <!-- These are some CSS codes. -->
+    <style>
+        body {
+            background-color: white;
+            color: olive;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        nav {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+    
+        nav a {
+            color: olive;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+    
+        nav a:hover {
+            text-decoration: underline;
+        }
+    
+        /* Dropdown styling */
+        label, select {
+            color: olive;
+            font-size: 16px;
+            margin: 10px;
+        }
+    
+        select {
+            background-color: white;
+            border: 1px solid olive;
+            padding: 5px 10px;
+            font-family: inherit;
+            cursor: pointer;
+        }
+    
+        option {
+            color: olive;
+        }
+    
+        /* All other links */
+        a {
+            color: olive;
+            text-decoration: underline;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+     
+</head>
+<body>
+    <!-- This is a short introduction. -->
+    <header>
+     <h1>Recipe Gallary</h1>
+     <p>Take a visual stroll through our delicious world of Korean cuisine!
+         From sizzling street food to heartwarming home-cooked classics, this gallery showcases 
+         the dishes that bring flavor and culture together. See something you love? 
+         Click on it to explore the full recipe and bring it to life in your own kitchen!
+     </p>
+    </header>
+
+     <!-- This is the dropdown for filtering. -->
+    <section>
+     <label for="categories">Filter by categories</label>
+     <select id="categories">
+        <option value="all">All</option>
+        <option value="Appetizer">Appetizer</option>
+        <option value="main dish">Main Dish</option>
+        <option value="Dessert">Desserts</option>
+     </select>
+    </section>
+    <hr>
+
+     <!-- This is an appetizer -->
+    <section>
+    <article>
+        <h2>Oi Muchim</h2>
+        <img src="Oi Muchim.jpeg" alt="Oi Muchim" width="450" height="350">
+        <p>Crisp cucumber slices tossed in a tangy, spicy dressing made with gochugaru, garlic, 
+        vinegar, and sesame oil. This refreshing and flavorful dish is a great way to awaken
+        your palate, offering a cool, zesty kick to begin your meal. 
+        <a href="recipe-details.html#Oi Muchim">Wanna try it?</a></p> <br>
+        <hr>
+    </article>
+    
+    <!-- This is an appetizer -->
+     <article>
+        <h2>Gyeran Mari.</h2>
+        <img src="Gyeran Mari.jpeg" alt="Gyeran Mari" width="450" height="350">
+        <p>A fluffy rolled egg omelette filled with finely chopped veggies like carrots,
+        scallions, and sometimes seaweed. Sliced into bite-sized rounds, it's a delightful
+        start to any meal, offering a light and savory bite before the main course. <br>
+        <a href="recipe-details.html#Gyeran Mari">Wanna give it a go?</a></p>
+        <hr>
+    </article>
+
+     <!-- This is the main dish -->
+     <article>
+        <h2>Ramen Noodles</h2>
+        <img src="noodles.jpeg" alt="a mouthwatering bowl of noodle" width="450" height="350">
+        <p>Ramen is a comforting  noodle sup featuring springy wheat noodles served in a rich, 
+        flavorful broth—often topped with sliced meat, soft-boiled eggs, seaweed, and green onions. 
+        It's the ultimate bowl of cozy and crave-worthy goodness! <br>
+        <a href="recipe-details.html#Ramen Noodles">Give it a try!</a></p>
+        <hr>
+    </article>
+
+     <!-- This is the main dish. -->
+    <article>
+        <h2>Kimchi</h2>
+        <img src="kimchi.webp" alt="Kimchi" width="450" height="350">
+        <p>Kimchi is a spicy, tangy Korean side dish made from fermented vegetables like napa cabbage 
+        and radish. Seasoned with chili flakes, garlic, and ginger, it's packed with flavor and 
+        gut-friendly probiotics—perfect as a side or added to your favorite dishes for an extra kick. <br>
+        <a href="recipe-details.html#Kimchi">Let's cook it together!</a></p>
+        <hr>
+    </article>
+
+    <!-- This is a Dessert. -->
+     <article>
+        <h2>Bingsu</h2>
+        <img src="Bingsu.jpeg" alt="Bingsu" width="450" height="350">
+        <p> A cool and refreshing dessert made from finely shaved ice, topped with sweetened
+        condensed milk, red bean paste, fruits, and sometimes chewy rice cakes. Perfect 
+        for a light, sweet treat on a hot day. <br>
+        <a href="recipe-details.html#Bingsu">Figure out how it is cooked</a></p>
+        <hr>
+    </article>
+
+     <!-- This is a Dessert. -->
+    <article>
+        <h2>Hotteok</h2>
+        <img src="Hotteok.webp" alt="Hotteok" width="450" height="350">
+        <p>A warm, fried pancake filled with a sweet brown sugar, cinnamon, and nut filling.
+        Crispy on the outside and soft on the inside, it's a comforting, indulgent dessert 
+        enjoyed especially in winter. <br>
+        <a href="recipe-details.html#Hotteok">Let's eat it!</a></p>
+        <hr>
+    </article>
+    </section>
+</body>
+</html>

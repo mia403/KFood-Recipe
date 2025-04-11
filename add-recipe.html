@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <!-- These are some CSS codes -->
+    <style>
+        body {
+        background-color: white;
+        color: olive;
+        font-family: Arial, sans-serif;
+      }
+      
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      label, input, textarea, select {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      
+      input[type="submit"] {
+        background-color: olive;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: darkolivegreen;
+      }
+        </style>      
+</head>
+<body>
+    <!-- this is a short introduction part -->
+    <header>
+    <h1>Share Your Own Recipe With Us</h1>
+    <p>Got a favorite Korean dish you love to make? Share your recipe with us and inspire fellow 
+    food lovers—just fill out the form below!</p>
+    </header>
+    <hr>
+
+    <!-- This is the form part. -->
+    <section>
+     <form action="#" method="post">
+        <label for="Name">Recipe Name</label><br>
+        <input type="text" id="Name" required>
+        <br><br>
+        <label for="Details">Ingredients</label><br>
+        <textarea name="Details" id="Details" rows="5" cols="30" required></textarea>
+        <br><br>
+        <label for="Instructions">Cooking Instructions</label><br>
+        <textarea name="Instructions" id="Instructions" rows="5" cols="30" required></textarea>
+        <br><br>
+        <label for="Image">Share a photo of your food.</label><br>
+        <input type="file" id="Image" required>
+        <br><br>
+        <label for="categories">Recipe Categories</label>
+        <select name="Recipe categories" id="categories" required>
+            <option value="">--Select a category --</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="main">Main Dish</option>
+            <option value="Side">Side Dish</option>
+            <option value="Deserts">Desserts</option>
+            <option value="beverage">Beverages</option>
+        </select>
+        <br><br>
+
+    <!-- This is the submit button -->
+    <input type="submit" value="Add Recipe">
+     </form>
+    </section>
+</body>
+</html>
